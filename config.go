@@ -57,6 +57,23 @@ type ShoutrrrNotifications struct {
 	Settings map[string]string `json:"settings"`
 }
 
+func (c Configuration) shoutrrrURLs() ([]string, error) {
+	urls := make([]string, 0, len(c.ShoutrrrAddrs))
+	for _, addr := range c.ShoutrrrAddrs {
+		u, err := url.Parse(addr.URL)
+		if err != nil {
+			return nil, fmt.Errorf("parse url: %w", err)
+		}
+		vals := url.Values{}
+		for k, v := range addr.Settings {
+			vals.Add(k, v)
+		}
+		u.RawQuery = vals.Encode()
+		urls = append(urls, u.String())
+	}
+	return urls, nil
+}
+
 func LoadConfiguration(name string) (*Configuration, error) {
 	var config Configuration
 	f, err := os.ReadFile(name)
@@ -85,21 +102,4 @@ func processConfiguration(config *Configuration) error {
 		}
 	}
 	return nil
-}
-
-func (c Configuration) shoutrrrURLs() ([]string, error) {
-	urls := make([]string, 0, len(c.ShoutrrrAddrs))
-	for _, addr := range c.ShoutrrrAddrs {
-		u, err := url.Parse(addr.URL)
-		if err != nil {
-			return nil, fmt.Errorf("parse url: %w", err)
-		}
-		vals := url.Values{}
-		for k, v := range addr.Settings {
-			vals.Add(k, v)
-		}
-		u.RawQuery = vals.Encode()
-		urls = append(urls, u.String())
-	}
-	return urls, nil
 }
