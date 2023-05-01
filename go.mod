@@ -21,7 +21,7 @@ require (
 	github.com/libdns/hetzner v0.0.1
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
-	github.com/libdns/libdns v0.2.2-0.20230227175549-2dc480633939
+	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
 	github.com/libdns/linode v0.0.0-20230201025656-3b2446d859fc
 	github.com/libdns/loopia v0.0.3
 	github.com/libdns/metaname v0.3.0
