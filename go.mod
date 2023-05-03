@@ -7,7 +7,7 @@ require (
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/libdns/alidns v1.0.2
 	github.com/libdns/azure v0.2.0
-	github.com/libdns/civo v0.1.12
+	github.com/libdns/civo v0.1.13
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
@@ -72,7 +72,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
-	github.com/civo/civogo v0.3.32 // indirect
+	github.com/civo/civogo v0.3.33 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
