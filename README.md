@@ -10,7 +10,7 @@ ddnsman uses [`github.com/libdns`](https://github.com/libdns) to communicate wit
 
 Here is an example:
 
-``` json
+``` jsonc
 {
   "interval": "5m", // See https://pkg.go.dev/time#ParseDuration.
   "settings": [
