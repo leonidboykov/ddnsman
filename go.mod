@@ -13,7 +13,7 @@ require (
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
-	github.com/libdns/duckdns v0.1.1
+	github.com/libdns/duckdns v0.2.0
 	github.com/libdns/dynv6 v1.0.0
 	github.com/libdns/gandi v1.0.2
 	github.com/libdns/godaddy v1.0.3
