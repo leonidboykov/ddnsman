@@ -74,9 +74,14 @@ func (c Configuration) shoutrrrURLs() ([]string, error) {
 	return urls, nil
 }
 
-func LoadConfiguration(name string) (*Configuration, error) {
+func LoadConfiguration() (*Configuration, error) {
+	configPath := os.Getenv("CONFIG_PATH")
+	if configPath == "" {
+		configPath = "ddnsman.json"
+	}
+
 	var config Configuration
-	f, err := os.ReadFile(name)
+	f, err := os.ReadFile(configPath)
 	if err != nil {
 		return nil, fmt.Errorf("unable to read configuration file: %w", err)
 	}
@@ -97,6 +102,7 @@ func processConfiguration(config *Configuration) error {
 			return fmt.Errorf("unable to create a new provider: %w", err)
 		}
 		config.Settings[idx].provider = provider
+		// DNS zones are required to use `.` at the end.
 		if !strings.HasSuffix(config.Settings[idx].Domain, ".") {
 			config.Settings[idx].Domain += "."
 		}

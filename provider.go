@@ -9,6 +9,7 @@ import (
 	"github.com/libdns/civo"
 	"github.com/libdns/cloudflare"
 	"github.com/libdns/ddnss"
+	"github.com/libdns/desec"
 	"github.com/libdns/digitalocean"
 	"github.com/libdns/dinahosting"
 	"github.com/libdns/dnspod"
@@ -59,10 +60,15 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 		return readProvider[cloudflare.Provider](data)
 	case "ddnss":
 		return readProvider[ddnss.Provider](data)
+	case "desec":
+		return readProvider[desec.Provider](data)
 	case "digitalocean":
 		return readProvider[digitalocean.Provider](data)
 	case "dinahosting":
 		return readProvider[dinahosting.Provider](data)
+	// FIXME: Broken API due to int to uint conversion.
+	// case "directadmin":
+	// 	return readProvider[directadmin.Provider](data)
 	case "dnspod":
 		return readProvider[dnspod.Provider](data)
 	case "duckdns":
@@ -83,6 +89,9 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	// FIXME: Broken API due to int to uint conversion.
 	// case "hosttech":
 	// 	return readProvider[hosttech.Provider](data)
+	// FIXME: Broken API due to int to uint conversion.
+	// case "infomaniak":
+	// 	return readProvider[infomaniak.Provider](data)
 	// FIXME: Broken API due to int to uint conversion.
 	// case "inwx":
 	// 	return readProvider[inwx.Provider](data)
