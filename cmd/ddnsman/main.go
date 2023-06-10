@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	config, err := ddnsman.LoadConfiguration("config.json") // TODO: Make it customizable.
+	config, err := ddnsman.LoadConfiguration()
 	if err != nil {
 		log.Fatalln("unable to read configuration:", err)
 	}
