@@ -3,7 +3,7 @@ name: Multi-Arch Docker Image
 on:
   push:
     branches:
-      - ${{ github.event.repository.default_branch }}
+      - "main"
 
 jobs:
   publish:
