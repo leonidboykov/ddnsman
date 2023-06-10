@@ -102,6 +102,9 @@ func (u *Updater) checkRecord(ctx context.Context, externalIP string, setting Se
 			}
 		}
 	}
+	if len(records) == 0 {
+		return nil
+	}
 	u.sender.Send(fmt.Sprintf("Setting IP `%s` for zone `%s`.", externalIP, setting.Domain), nil)
 	if _, err := setting.provider.SetRecords(ctx, setting.Domain, records); err != nil {
 		return fmt.Errorf("setting records: %w", err)
