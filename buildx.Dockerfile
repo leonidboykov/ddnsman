@@ -2,6 +2,7 @@ FROM --platform=${BUILDPLATFORM:-linux/amd64} golang as builder
 
 ARG TARGETOS
 ARG TARGETARCH
+WORKDIR /src
 
 ENV CGO_ENABLED=0
 
