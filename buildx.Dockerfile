@@ -7,7 +7,7 @@ ENV CGO_ENABLED=0
 
 COPY . .
 
-RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o ddnsman
+RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o ddnsman ./cmd/ddnsman
 
 FROM --platform=${BUILDPLATFORM:-linux/amd64} alpine
 
