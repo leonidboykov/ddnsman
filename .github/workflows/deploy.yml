@@ -1,29 +1,29 @@
-name: Go package
+name: Multi-Arch Docker Image
 
-on: [push]
+on:
+  push:
+    branches:
+      - ${{ github.event.repository.default_branch }}
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Go
-        uses: actions/setup-go@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
         with:
-          go-version: stable
-      - name: Build
-        run: go build ./cmd/ddnsman
-      - name: Test
-        run: go test -v ./...
-      - name: Coverage
-        run: go test -race -coverprofile=coverage.txt -covermode=atomic
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-      - name: Kaniko build
-        uses: aevea/action-kaniko@master
+          username: ${{ secrets.DOCKER_LOGIN }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v4
         with:
-          registry: ghcr.io
-          image: ddnsman
-          password: ${{ secrets.GITHUB_TOKEN }}
+          context: .
+          file: buildx.Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: leonidboykov/ddnsman:latest
