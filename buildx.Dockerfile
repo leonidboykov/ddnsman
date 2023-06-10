@@ -12,7 +12,7 @@ RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o ddnsman ./cmd/ddnsman
 
 FROM --platform=${BUILDPLATFORM:-linux/amd64} alpine
 
-COPY --from=builder ddnsman /usr/local/bin
+COPY --from=builder /src/ddnsman /usr/local/bin
 WORKDIR /
 ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["ddnsman"]
