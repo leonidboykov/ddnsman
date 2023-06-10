@@ -5,10 +5,6 @@ ARG BUILDPLATFORM
 ARG TARGETOS
 ARG TARGETARCH
 
-COPY go.mod go.mod
-COPY go.sum go.sum
-RUN go mod download
-
 COPY . .
 
 RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o ddnsman
