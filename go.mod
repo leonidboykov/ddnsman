@@ -7,7 +7,7 @@ require (
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/libdns/alidns v1.0.3
 	github.com/libdns/azure v0.3.0
-	github.com/libdns/civo v0.1.15
+	github.com/libdns/civo v0.1.16
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
 	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
@@ -23,7 +23,7 @@ require (
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
 	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
-	github.com/libdns/linode v0.3.0
+	github.com/libdns/linode v0.4.0
 	github.com/libdns/loopia v0.0.3
 	github.com/libdns/metaname v0.3.0
 	github.com/libdns/mythicbeasts v1.0.1
@@ -68,7 +68,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
-	github.com/civo/civogo v0.3.37 // indirect
+	github.com/civo/civogo v0.3.39 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
@@ -91,7 +91,7 @@ require (
 	github.com/kolo/xmlrpc v0.0.0-20201022064351-38db28db192b // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
-	github.com/linode/linodego v1.17.2 // indirect
+	github.com/linode/linodego v1.19.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/miekg/dns v1.1.49 // indirect
@@ -108,13 +108,13 @@ require (
 	github.com/transip/gotransip/v6 v6.6.1 // indirect
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	golang.org/x/crypto v0.10.0 // indirect
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df // indirect
+	golang.org/x/crypto v0.11.0 // indirect
+	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
 	golang.org/x/mod v0.11.0 // indirect
-	golang.org/x/net v0.11.0 // indirect
+	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/sys v0.9.0 // indirect
-	golang.org/x/text v0.10.0 // indirect
+	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/tools v0.7.0 // indirect
 	google.golang.org/api v0.113.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
