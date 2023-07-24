@@ -10,7 +10,7 @@ require (
 	github.com/libdns/civo v0.1.16
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
-	github.com/libdns/desec v0.2.2
+	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
@@ -109,7 +109,7 @@ require (
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df // indirect
+	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
 	golang.org/x/mod v0.11.0 // indirect
 	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect

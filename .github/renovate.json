@@ -3,5 +3,11 @@
   "extends": [
     "config:base",
     "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["github.com/libdns/desec"],
+      "allowedVersions": ">v0.2.2"
+    }
   ]
 }
