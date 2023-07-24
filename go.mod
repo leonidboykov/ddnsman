@@ -68,11 +68,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
-<<<<<<< HEAD
-	github.com/civo/civogo v0.3.37 // indirect
-=======
 	github.com/civo/civogo v0.3.39 // indirect
->>>>>>> refs/remotes/origin/renovate/all-minor-patch
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
@@ -95,11 +91,7 @@ require (
 	github.com/kolo/xmlrpc v0.0.0-20201022064351-38db28db192b // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
-<<<<<<< HEAD
-	github.com/linode/linodego v1.17.2 // indirect
-=======
 	github.com/linode/linodego v1.19.0 // indirect
->>>>>>> refs/remotes/origin/renovate/all-minor-patch
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/miekg/dns v1.1.49 // indirect
@@ -116,15 +108,6 @@ require (
 	github.com/transip/gotransip/v6 v6.6.1 // indirect
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
-<<<<<<< HEAD
-	golang.org/x/crypto v0.10.0 // indirect
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df // indirect
-	golang.org/x/mod v0.11.0 // indirect
-	golang.org/x/net v0.11.0 // indirect
-	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/sys v0.9.0 // indirect
-	golang.org/x/text v0.10.0 // indirect
-=======
 	golang.org/x/crypto v0.11.0 // indirect
 	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df // indirect
 	golang.org/x/mod v0.11.0 // indirect
@@ -132,7 +115,6 @@ require (
 	golang.org/x/oauth2 v0.6.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
->>>>>>> refs/remotes/origin/renovate/all-minor-patch
 	golang.org/x/tools v0.7.0 // indirect
 	google.golang.org/api v0.113.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
