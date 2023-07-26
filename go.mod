@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/containrrr/shoutrrr v0.7.1
 	github.com/glendc/go-external-ip v0.1.0
+	github.com/goccy/go-yaml v1.11.0
 	github.com/libdns/alidns v1.0.3
 	github.com/libdns/azure v0.3.0
 	github.com/libdns/civo v0.1.16
@@ -116,6 +117,7 @@ require (
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/tools v0.7.0 // indirect
+	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.113.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
