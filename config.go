@@ -2,42 +2,17 @@ package ddnsman
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"net/url"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/goccy/go-yaml"
 )
 
-type stringDuration time.Duration
-
-func (d stringDuration) String() string {
-	return time.Duration(d).String()
-}
-
-func (d *stringDuration) UnmarshalJSON(data []byte) error {
-	var v any
-	if err := json.Unmarshal(data, &v); err != nil {
-		return fmt.Errorf("parse json: %w", err)
-	}
-	switch val := v.(type) {
-	case float64:
-		*(*time.Duration)(d) = time.Duration(val)
-	case string:
-		var err error
-		*(*time.Duration)(d), err = time.ParseDuration(val)
-		if err != nil {
-			return fmt.Errorf("parse time: %w", err)
-		}
-	default:
-		return errors.New("invalid duration")
-	}
-	return nil
-}
-
 type Configuration struct {
-	Interval      stringDuration          `json:"interval"`
+	Interval      time.Duration           `json:"interval"`
 	Settings      []Setting               `json:"settings"`
 	ShoutrrrAddrs []ShoutrrrNotifications `json:"shoutrrr_notifications"`
 }
@@ -80,19 +55,28 @@ func LoadConfiguration() (*Configuration, error) {
 		configPath = "ddnsman.json"
 	}
 
-	var config Configuration
-	f, err := os.ReadFile(configPath)
+	config, err := readConfiguration(configPath)
 	if err != nil {
-		return nil, fmt.Errorf("unable to read configuration file: %w", err)
-	}
-	if err := json.Unmarshal(f, &config); err != nil {
-		return nil, fmt.Errorf("unable to parse configuration file: %w", err)
+		return nil, fmt.Errorf("read config: %w", err)
 	}
 	if config.Interval == 0 {
-		config.Interval = stringDuration(5 * time.Minute)
+		config.Interval = 5 * time.Minute
 	}
-	processConfiguration(&config)
-	return &config, nil
+	processConfiguration(config)
+	return config, nil
+}
+
+func readConfiguration(configPath string) (*Configuration, error) {
+	config := new(Configuration)
+	f, err := os.ReadFile(configPath)
+	if err != nil {
+		return nil, fmt.Errorf("read configuration file: %w", err)
+	}
+
+	if err := yaml.UnmarshalWithOptions(f, config, yaml.UseJSONUnmarshaler()); err != nil {
+		return nil, fmt.Errorf("parse configuration file: %w", err)
+	}
+	return config, nil
 }
 
 func processConfiguration(config *Configuration) error {

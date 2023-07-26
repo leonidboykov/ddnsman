@@ -12,7 +12,7 @@ import (
 func main() {
 	config, err := ddnsman.LoadConfiguration()
 	if err != nil {
-		log.Fatalln("unable to read configuration:", err)
+		log.Fatalln("read configuration:", err)
 	}
 
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, os.Kill)
