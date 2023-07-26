@@ -2,7 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":disableDependencyDashboard",
     "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["github.com/libdns/desec"],
+      "allowedVersions": ">v0.2.2"
+    }
   ]
 }
