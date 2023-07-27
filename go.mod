@@ -105,6 +105,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.17 // indirect
+	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.597 // indirect
 	github.com/transip/gotransip/v6 v6.6.1 // indirect
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
