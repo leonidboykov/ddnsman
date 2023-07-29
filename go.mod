@@ -36,7 +36,7 @@ require (
 	github.com/libdns/powerdns v0.1.2
 	github.com/libdns/rfc2136 v0.1.0
 	github.com/libdns/route53 v1.3.3
-	github.com/libdns/scaleway v0.1.8
+	github.com/libdns/scaleway v0.1.9
 	github.com/libdns/tencentcloud v1.0.0
 	github.com/libdns/totaluptime v1.0.1
 	github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12
@@ -104,7 +104,7 @@ require (
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.17 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.20 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.597 // indirect
 	github.com/transip/gotransip/v6 v6.6.1 // indirect

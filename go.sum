@@ -606,6 +606,8 @@ github.com/libdns/route53 v1.3.3 h1:16sTxbbRGm0zODz0p0aVHHIyTqtHzEn3j0s4dGzQvNI=
 github.com/libdns/route53 v1.3.3/go.mod h1:n1Xy55lpfdxMIx4CVWAM16GQac+/OZcnm1xBjMyhZAo=
 github.com/libdns/scaleway v0.1.8 h1:duUadubf80sjJlNv8mWrsT1x4YrGiA8F9Zg0Tkto7zc=
 github.com/libdns/scaleway v0.1.8/go.mod h1:c761Zg1lcyJCgPVf840IHhYYHsMjpTwvPua7Gg7tmHE=
+github.com/libdns/scaleway v0.1.9 h1:6zc0kn/2g3LFIMF5lGZBON9u8plGWrsdnNv+xT0658E=
+github.com/libdns/scaleway v0.1.9/go.mod h1:AA4lzjxLMvYlbQiZdOCmquMZ+1nz0tUCzTReWvbtITo=
 github.com/libdns/tencentcloud v1.0.0 h1:u4LXnYu/lu/9P5W+MCVPeSDnwI+6w+DxYhQ1wSnQOuU=
 github.com/libdns/tencentcloud v1.0.0/go.mod h1:NlCgPumzUsZWSOo1+Q/Hfh8G6TNRAaTUeWQdg6LbtUI=
 github.com/libdns/totaluptime v1.0.1 h1:4QaWhGt++t748cRqPxz9i/NEp914MqAHZTrrfFiRz38=
@@ -746,6 +748,8 @@ github.com/ryanuber/columnize v2.1.0+incompatible/go.mod h1:sm1tb6uqfes/u+d4ooFo
 github.com/sagikazarmark/crypt v0.8.0/go.mod h1:TmKwZAo97S4Fy4sfMH/HX/cQP5D+ijra2NyLpNNmttY=
 github.com/scaleway/scaleway-sdk-go v1.0.0-beta.17 h1:1WuWJu7/e8SqK+uQl7lfk/N/oMZTL2NE/TJsNKRNMc4=
 github.com/scaleway/scaleway-sdk-go v1.0.0-beta.17/go.mod h1:fCa7OJZ/9DRTnOKmxvT6pn+LPWUptQAmHF/SBJUGEcg=
+github.com/scaleway/scaleway-sdk-go v1.0.0-beta.20 h1:a9hSJdJcd16e0HoMsnFvaHvxB3pxSD+SC7+CISp7xY0=
+github.com/scaleway/scaleway-sdk-go v1.0.0-beta.20/go.mod h1:fCa7OJZ/9DRTnOKmxvT6pn+LPWUptQAmHF/SBJUGEcg=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg65j358z/aeFdxmN0P9QXhEzd20vsDc=
 github.com/sirupsen/logrus v1.2.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=
 github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6MwdIuYE2rE=
