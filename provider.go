@@ -13,6 +13,7 @@ import (
 	"github.com/libdns/digitalocean"
 	"github.com/libdns/dinahosting"
 	"github.com/libdns/dnspod"
+	"github.com/libdns/dnsupdate"
 	"github.com/libdns/duckdns"
 	"github.com/libdns/dynv6"
 	"github.com/libdns/gandi"
@@ -71,6 +72,8 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	// 	return readProvider[directadmin.Provider](data)
 	case "dnspod":
 		return readProvider[dnspod.Provider](data)
+	case "dnsupdate":
+		return readProvider[dnsupdate.Provider](data)
 	case "duckdns":
 		return readProvider[duckdns.Provider](data)
 	case "dynv6":
