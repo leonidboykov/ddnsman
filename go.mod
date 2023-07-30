@@ -15,6 +15,7 @@ require (
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
+	github.com/libdns/dnsupdate v0.0.0-20230728193621-2e79c50ea2ee
 	github.com/libdns/duckdns v0.2.0
 	github.com/libdns/dynv6 v1.0.0
 	github.com/libdns/gandi v1.0.2
@@ -95,7 +96,7 @@ require (
 	github.com/linode/linodego v1.19.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
-	github.com/miekg/dns v1.1.49 // indirect
+	github.com/miekg/dns v1.1.55 // indirect
 	github.com/mittwald/go-powerdns v0.5.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
@@ -112,12 +113,12 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
 	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
-	golang.org/x/mod v0.11.0 // indirect
+	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	golang.org/x/tools v0.7.0 // indirect
+	golang.org/x/tools v0.11.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.113.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
