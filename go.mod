@@ -8,7 +8,7 @@ require (
 	github.com/goccy/go-yaml v1.11.0
 	github.com/libdns/alidns v1.0.3
 	github.com/libdns/azure v0.3.0
-	github.com/libdns/civo v0.1.16
+	github.com/libdns/civo v0.1.17
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
 	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
@@ -70,7 +70,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
-	github.com/civo/civogo v0.3.39 // indirect
+	github.com/civo/civogo v0.3.42 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
