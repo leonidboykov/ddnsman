@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/url"
 	"os"
-	"strings"
 	"time"
 
 	"github.com/goccy/go-yaml"
+	"github.com/miekg/dns"
 )
 
 type Configuration struct {
@@ -86,10 +86,7 @@ func processConfiguration(config *Configuration) error {
 			return fmt.Errorf("unable to create a new provider: %w", err)
 		}
 		config.Settings[idx].provider = provider
-		// DNS zones are required to use `.` at the end.
-		if !strings.HasSuffix(config.Settings[idx].Domain, ".") {
-			config.Settings[idx].Domain += "."
-		}
+		config.Settings[idx].Domain = dns.Fqdn(config.Settings[idx].Domain)
 	}
 	return nil
 }
