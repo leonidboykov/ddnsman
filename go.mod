@@ -1,6 +1,6 @@
 module github.com/leonidboykov/ddnsman
 
-go 1.20
+go 1.21
 
 require (
 	github.com/containrrr/shoutrrr v0.7.1
