@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["github.com/libdns/desec"],
-      "allowedVersions": ">v0.2.2"
+      "allowedVersions": ">v0.2.3"
     }
   ]
 }
