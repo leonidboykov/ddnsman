@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
-	github.com/goccy/go-yaml v1.11.0
+	github.com/goccy/go-yaml v1.11.1
 	github.com/libdns/alidns v1.0.3
 	github.com/libdns/azure v0.3.0
 	github.com/libdns/civo v0.1.18
