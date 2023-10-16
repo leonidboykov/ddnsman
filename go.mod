@@ -5,10 +5,10 @@ go 1.21
 require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
-	github.com/goccy/go-yaml v1.11.1
+	github.com/goccy/go-yaml v1.11.2
 	github.com/libdns/alidns v1.0.3
 	github.com/libdns/azure v0.3.0
-	github.com/libdns/civo v0.1.18
+	github.com/libdns/civo v0.1.20
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
 	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
@@ -25,7 +25,7 @@ require (
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
 	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
-	github.com/libdns/linode v0.4.0
+	github.com/libdns/linode v0.4.1
 	github.com/libdns/loopia v0.0.3
 	github.com/libdns/metaname v0.3.0
 	github.com/libdns/mythicbeasts v1.0.1
@@ -37,7 +37,7 @@ require (
 	github.com/libdns/powerdns v0.1.2
 	github.com/libdns/rfc2136 v0.1.0
 	github.com/libdns/route53 v1.3.3
-	github.com/libdns/scaleway v0.1.9
+	github.com/libdns/scaleway v0.1.10
 	github.com/libdns/tencentcloud v1.0.0
 	github.com/libdns/totaluptime v1.0.1
 	github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12
@@ -45,7 +45,7 @@ require (
 	github.com/libdns/vultr v1.0.0
 	github.com/miekg/dns v1.1.56
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/sync v0.3.0
+	golang.org/x/sync v0.4.0
 )
 
 require (
@@ -71,7 +71,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
-	github.com/civo/civogo v0.3.43 // indirect
+	github.com/civo/civogo v0.3.47 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
 	github.com/fatih/color v1.15.0 // indirect
@@ -94,7 +94,7 @@ require (
 	github.com/kolo/xmlrpc v0.0.0-20201022064351-38db28db192b // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
-	github.com/linode/linodego v1.19.0 // indirect
+	github.com/linode/linodego v1.23.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mittwald/go-powerdns v0.5.2 // indirect
@@ -105,7 +105,7 @@ require (
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.20 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.21 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.597 // indirect
 	github.com/transip/gotransip/v6 v6.6.1 // indirect
