@@ -3,6 +3,7 @@ package ddnsman
 import (
 	"context"
 	"fmt"
+	"log/slog"
 	"time"
 
 	"github.com/containrrr/shoutrrr/pkg/router"
@@ -41,6 +42,7 @@ func New(config *Configuration) (*Updater, error) {
 }
 
 func (u *Updater) Start(ctx context.Context) error {
+	slog.Info("start DDNS updater", slog.Duration("interval", u.config.Interval))
 	u.sender.Send(fmt.Sprintf("Watching records every %s", u.config.Interval), nil)
 	if err := u.process(ctx); err != nil {
 		return err
@@ -57,6 +59,7 @@ func (u *Updater) Start(ctx context.Context) error {
 			}
 		case <-ctx.Done():
 			u.sender.Send("Shutting down.", nil)
+			slog.Info("shutting down")
 			return nil
 		}
 	}
@@ -87,6 +90,8 @@ func (u *Updater) process(ctx context.Context) error {
 }
 
 func (u *Updater) checkRecord(ctx context.Context, externalIP string, setting Setting) error {
+	logger := slog.Default().With("provider", setting.Provider.Name)
+
 	providerRecords, err := setting.provider.GetRecords(ctx, setting.Domain)
 	if err != nil {
 		return fmt.Errorf("getting records for zone %q: %w", setting.Domain, err)
@@ -97,6 +102,11 @@ func (u *Updater) checkRecord(ctx context.Context, externalIP string, setting Se
 			providerName := libdns.RelativeName(providerRecord.Name, setting.Domain)
 
 			if providerName == targetRecord && providerRecord.Type == "A" && providerRecord.Value != externalIP {
+				logger.Info("IP address mismatch",
+					slog.String("record", providerName),
+					slog.String("record IP", providerRecord.Value),
+					slog.String("external IP", externalIP),
+				)
 				providerRecord.Value = externalIP
 				records = append(records, providerRecord)
 			}
