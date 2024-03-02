@@ -509,6 +509,8 @@ github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSO
 github.com/libdns/libdns v0.2.1/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
 github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e h1:rQoZTxoOHpdC6eXnRSxKnpCfe4SqGvTd0aqz8ZsPTUw=
 github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
+github.com/libdns/libdns v0.2.2-0.20231213153513-6b4e74fc9c11 h1:o+bWtnRzLQIf4F75Mcz483JGqaLJX9gF+F7LpgvLrvA=
+github.com/libdns/libdns v0.2.2-0.20231213153513-6b4e74fc9c11/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
 github.com/libdns/linode v0.4.1 h1:Fr22y3aWBzaj3AlFbCQ743eC+5Hss+sJ+OEjtlK61AA=
 github.com/libdns/linode v0.4.1/go.mod h1:BqAJnQxzpnQgy4GDVYf3hQvhLGDc3n8BRwMZ0/9m2y0=
 github.com/libdns/loopia v0.0.3 h1:IsXvZufg4KQ2K5zbUMl5KVvWurVHFQ4YsHti7cSqVCM=
