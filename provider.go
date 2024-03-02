@@ -3,6 +3,7 @@ package ddnsman
 import (
 	"encoding/json"
 	"fmt"
+	"log/slog"
 
 	"github.com/libdns/acmeproxy"
 	"github.com/libdns/alidns"
@@ -64,6 +65,7 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	case "bunny":
 		return readProvider[bunny.Provider](data)
 	case "civo":
+		slog.Warn("civo provider has been archived since Mar 1, 2024. It may stop working in the next updates.")
 		return readProvider[civo.Provider](data)
 	case "cloudflare":
 		return readProvider[cloudflare.Provider](data)
@@ -160,6 +162,7 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	case "route53":
 		return readProvider[route53.Provider](data)
 	case "scaleway":
+		slog.Warn("scaleway provider has been archived since Mar 1, 2024. It may stop working in the next updates.")
 		return readProvider[scaleway.Provider](data)
 	case "tencentcloud":
 		return readProvider[tencentcloud.Provider](data)
