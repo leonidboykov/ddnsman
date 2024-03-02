@@ -543,6 +543,8 @@ github.com/libdns/totaluptime v1.0.1 h1:4QaWhGt++t748cRqPxz9i/NEp914MqAHZTrrfFiR
 github.com/libdns/totaluptime v1.0.1/go.mod h1:Ri00J3Mi+lT6X0lfN8NFQE/W4IGwXgocc5t8KIyXdHw=
 github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12 h1:o83P3Dkd3D7EQ3EeVp7o/V1U9kXRp1gZWyPuGA5/Ujw=
 github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12/go.mod h1:ocheQC8LYFK4fBdefQxScFxqPcCc+ihbCx42+ooA8Cs=
+github.com/libdns/transip v0.0.0-20240123173758-1e040d7f9881 h1:puzMLDTN2EL7hze8UaP02b88wmqu5gd6BlEiTk8rR7w=
+github.com/libdns/transip v0.0.0-20240123173758-1e040d7f9881/go.mod h1:ocheQC8LYFK4fBdefQxScFxqPcCc+ihbCx42+ooA8Cs=
 github.com/libdns/vercel v0.0.2 h1:slfQWxgUdYFgKfPbK1vLE7k1CZSspHFlwC+nEWlm79w=
 github.com/libdns/vercel v0.0.2/go.mod h1:z2NBq/OQ8G0JPglZmit0YnqHm/k+eOz8s4XyLvYxhQo=
 github.com/libdns/vultr v1.0.0 h1:W8B4+k2bm9ro3bZLSZV9hMOQI+uO6Svu+GmD+Olz7ZI=
