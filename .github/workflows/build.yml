@@ -21,9 +21,9 @@ jobs:
         run: go test -race -coverprofile=coverage.txt -covermode=atomic
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
-      - name: Kaniko build
-        uses: aevea/action-kaniko@master
-        with:
-          registry: ghcr.io
-          image: ddnsman
-          password: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Kaniko build
+      #   uses: aevea/action-kaniko@master
+      #   with:
+      #     registry: ghcr.io
+      #     image: ddnsman
+      #     password: ${{ secrets.GITHUB_TOKEN }}

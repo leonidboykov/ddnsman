@@ -4,8 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/libdns/acmeproxy"
 	"github.com/libdns/alidns"
 	"github.com/libdns/azure"
+	"github.com/libdns/bunny"
 	"github.com/libdns/civo"
 	"github.com/libdns/cloudflare"
 	"github.com/libdns/ddnss"
@@ -20,11 +22,13 @@ import (
 	"github.com/libdns/godaddy"
 	"github.com/libdns/googleclouddns"
 	"github.com/libdns/hetzner"
+	"github.com/libdns/hexonet"
 	"github.com/libdns/ionos"
 	"github.com/libdns/leaseweb"
 	"github.com/libdns/libdns"
 	"github.com/libdns/linode"
 	"github.com/libdns/loopia"
+	"github.com/libdns/mailinabox"
 	"github.com/libdns/metaname"
 	"github.com/libdns/mythicbeasts"
 	"github.com/libdns/namecheap"
@@ -51,10 +55,14 @@ type Provider interface {
 
 func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	switch providerName {
+	case "acmeproxy":
+		return readProvider[acmeproxy.Provider](data)
 	case "alidns":
 		return readProvider[alidns.Provider](data)
 	case "azure":
 		return readProvider[azure.Provider](data)
+	case "bunny":
+		return readProvider[bunny.Provider](data)
 	case "civo":
 		return readProvider[civo.Provider](data)
 	case "cloudflare":
@@ -70,6 +78,9 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	// FIXME: Broken API due to int to uint conversion.
 	// case "directadmin":
 	// 	return readProvider[directadmin.Provider](data)
+	// FIXME: Broken API due to int to uint conversion.
+	// case "dnsmadeeasy":
+	// 	return readProvider[dnsmadeeasy.Provider](data)
 	case "dnspod":
 		return readProvider[dnspod.Provider](data)
 	case "dnsupdate":
@@ -78,6 +89,9 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 		return readProvider[duckdns.Provider](data)
 	case "dynv6":
 		return readProvider[dynv6.Provider](data)
+	// FIXME: Broken API due to int to uint conversion.
+	// case "easydns":
+	// 	return readProvider[easydns.Provider](data)
 	case "gandi":
 		return readProvider[gandi.Provider](data)
 	// FIXME: Broken API due to int to uint conversion.
@@ -89,6 +103,8 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 		return readProvider[googleclouddns.Provider](data)
 	case "hetzner":
 		return readProvider[hetzner.Provider](data)
+	case "hexonet":
+		return readProvider[hexonet.Provider](data)
 	// FIXME: Broken API due to int to uint conversion.
 	// case "hosttech":
 	// 	return readProvider[hosttech.Provider](data)
@@ -106,6 +122,8 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 		return readProvider[linode.Provider](data)
 	case "loopia":
 		return readProvider[loopia.Provider](data)
+	case "mailinabox":
+		return readProvider[mailinabox.Provider](data)
 	case "metaname":
 		return readProvider[metaname.Provider](data)
 	case "mythicbeasts":
