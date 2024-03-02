@@ -479,6 +479,8 @@ github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f h1:4KGt4bniZwl0wV3fJU
 github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f/go.mod h1:pi8wW9lDehHBJ7yD4hI57Xeu1oyXMFhE0epAJjvzcXA=
 github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f h1:Y0JkwI0Uip+Zrh71aHLmNz150cKnWuC+535v/zLS8zo=
 github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f/go.mod h1:B2TChhOTxvBflpRTHlguXWtwa1Ha5WI6JkB6aCViM+0=
+github.com/libdns/digitalocean v0.0.0-20230728223659-4f9064657aea h1:IGlMNZCUp8Ho7NYYorpP5ZJgg2mFXARs6eHs/pSqFkA=
+github.com/libdns/digitalocean v0.0.0-20230728223659-4f9064657aea/go.mod h1:B2TChhOTxvBflpRTHlguXWtwa1Ha5WI6JkB6aCViM+0=
 github.com/libdns/dinahosting v1.0.0 h1:8W31EPiA0AHdxUTmqbi8HhlL9+A+QsE9wyaFPASEpwg=
 github.com/libdns/dinahosting v1.0.0/go.mod h1:ZzLXQZPHjpePpfjq9grl1gWgw/sPBvrOGue5RDhQE2c=
 github.com/libdns/dnspod v0.0.3 h1:xJHDIujgLjvZnpB8/rMoCHUqA/KxSGBqRUXxSIzNzAA=
