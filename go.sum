@@ -463,6 +463,8 @@ github.com/leodido/go-urn v1.2.0 h1:hpXL4XnriNwQ/ABnpepYM/1vCLWNDfUNts8dX3xTG6Y=
 github.com/leodido/go-urn v1.2.0/go.mod h1:+8+nEpDfqqsY+g338gtMEUOtuK+4dEMhiQEgxpxOKII=
 github.com/libdns/acmeproxy v0.0.0-20231225160439-e51d10d5ee53 h1:YyO9J0PSo71mx6sNMuq3Bh3F3XE7mX8wlcsdYSv2pBM=
 github.com/libdns/acmeproxy v0.0.0-20231225160439-e51d10d5ee53/go.mod h1:H6PLM9B/FNhsfrju7bfGJ590kgY/TvU1HowAdYWPN7o=
+github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd h1:bBqwHIX6JsdzW3rL+1FZ/gFc+XjTWY9JF/vCZLTbXvY=
+github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd/go.mod h1:II3fJcVY6zWiAPrXY/oHFKUZVCFhepsT2BSEv6a4G78=
 github.com/libdns/alidns v1.0.3 h1:LFHuGnbseq5+HCeGa1aW8awyX/4M2psB9962fdD2+yQ=
 github.com/libdns/alidns v1.0.3/go.mod h1:e18uAG6GanfRhcJj6/tps2rCMzQJaYVcGKT+ELjdjGE=
 github.com/libdns/azure v0.3.0 h1:LW04LPmAd25ieFrsd/sd3QCajzaTn1vD78l7hgkHaAw=
@@ -509,6 +511,8 @@ github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSO
 github.com/libdns/libdns v0.2.1/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
 github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e h1:rQoZTxoOHpdC6eXnRSxKnpCfe4SqGvTd0aqz8ZsPTUw=
 github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
+github.com/libdns/libdns v1.0.0-beta.1 h1:KIf4wLfsrEpXpZ3vmc/poM8zCATXT2klbdPe6hyOBjQ=
+github.com/libdns/libdns v1.0.0-beta.1/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
 github.com/libdns/linode v0.4.1 h1:Fr22y3aWBzaj3AlFbCQ743eC+5Hss+sJ+OEjtlK61AA=
 github.com/libdns/linode v0.4.1/go.mod h1:BqAJnQxzpnQgy4GDVYf3hQvhLGDc3n8BRwMZ0/9m2y0=
 github.com/libdns/loopia v0.0.3 h1:IsXvZufg4KQ2K5zbUMl5KVvWurVHFQ4YsHti7cSqVCM=
