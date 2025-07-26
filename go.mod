@@ -13,7 +13,7 @@ require (
 	github.com/libdns/civo v0.1.20
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
-	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
+	github.com/libdns/desec v1.0.1
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
