@@ -23,11 +23,11 @@ require (
 	github.com/libdns/gandi v1.0.2
 	github.com/libdns/godaddy v1.0.3
 	github.com/libdns/googleclouddns v1.1.0
-	github.com/libdns/hetzner v0.0.1
+	github.com/libdns/hetzner v1.0.0
 	github.com/libdns/hexonet v0.1.0
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
-	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
+	github.com/libdns/libdns v1.0.0
 	github.com/libdns/linode v0.4.1
 	github.com/libdns/loopia v0.0.3
 	github.com/libdns/mailinabox v0.0.1
