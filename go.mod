@@ -14,7 +14,7 @@ require (
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
 	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
-	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
+	github.com/libdns/digitalocean dfa7af5c2e31
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
 	github.com/libdns/dnsupdate v0.0.0-20230728193621-2e79c50ea2ee
