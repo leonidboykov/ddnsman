@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
+	"net/netip"
 	"time"
 
 	"github.com/containrrr/shoutrrr/pkg/router"
@@ -16,7 +17,7 @@ type Updater struct {
 	config    *Configuration
 	consensus *externalip.Consensus
 	sender    *router.ServiceRouter
-	currentIP string // strings are comparable.
+	currentIP netip.Addr
 }
 
 func New(config *Configuration) (*Updater, error) {
@@ -68,28 +69,31 @@ func (u *Updater) Start(ctx context.Context) error {
 func (u *Updater) process(ctx context.Context) error {
 	externalIP, err := u.consensus.ExternalIP()
 	if err != nil {
-		return fmt.Errorf("unable to fetch external ip: %w", err)
+		return fmt.Errorf("fetch external IP: %w", err)
 	}
-	if externalIP.String() == u.currentIP {
+	externalIPAddr, err := netip.ParseAddr(externalIP.String())
+	if err != nil {
+		return fmt.Errorf("parse external IP: %w", err)
+	}
+	if externalIPAddr == u.currentIP {
 		// Skip check if external IP hasn't changed.
 		return nil
 	}
 
 	wg, ctx := errgroup.WithContext(ctx)
 	for _, setting := range u.config.Settings {
-		setting := setting
 		wg.Go(func() error {
-			return u.checkRecord(ctx, externalIP.String(), setting)
+			return u.checkRecord(ctx, externalIPAddr, setting)
 		})
 	}
 	if err := wg.Wait(); err != nil {
 		return err
 	}
-	u.currentIP = externalIP.String()
+	u.currentIP = externalIPAddr
 	return nil
 }
 
-func (u *Updater) checkRecord(ctx context.Context, externalIP string, setting Setting) error {
+func (u *Updater) checkRecord(ctx context.Context, externalIP netip.Addr, setting Setting) error {
 	logger := slog.Default().With("provider", setting.Provider.Name)
 
 	providerRecords, err := setting.provider.GetRecords(ctx, setting.Domain)
@@ -99,16 +103,21 @@ func (u *Updater) checkRecord(ctx context.Context, externalIP string, setting Se
 	var records []libdns.Record
 	for _, providerRecord := range providerRecords {
 		for _, targetRecord := range setting.Records {
-			providerName := libdns.RelativeName(providerRecord.Name, setting.Domain)
+			providerAddressRecord, ok := providerRecord.(libdns.Address)
+			if !ok {
+				continue
+			}
 
-			if providerName == targetRecord && providerRecord.Type == "A" && providerRecord.Value != externalIP {
+			providerName := libdns.RelativeName(providerAddressRecord.Name, setting.Domain)
+
+			if providerName == targetRecord && providerAddressRecord.IP != externalIP {
 				logger.Info("IP address mismatch",
 					slog.String("record", providerName),
-					slog.String("record IP", providerRecord.Value),
-					slog.String("external IP", externalIP),
+					slog.String("record IP", providerAddressRecord.IP.String()),
+					slog.Any("external IP", externalIP),
 				)
-				providerRecord.Value = externalIP
-				records = append(records, providerRecord)
+				providerAddressRecord.IP = externalIP
+				records = append(records, providerAddressRecord)
 			}
 		}
 	}

@@ -83,7 +83,7 @@ func processConfiguration(config *Configuration) error {
 	for idx, setting := range config.Settings {
 		provider, err := newProvider(setting.Provider.Name, setting.Provider.Settings)
 		if err != nil {
-			return fmt.Errorf("unable to create a new provider: %w", err)
+			return fmt.Errorf("create a new provider: %w", err)
 		}
 		config.Settings[idx].provider = provider
 		config.Settings[idx].Domain = dns.Fqdn(config.Settings[idx].Domain)

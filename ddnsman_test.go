@@ -3,6 +3,8 @@ package ddnsman
 import (
 	"context"
 	"errors"
+	"log/slog"
+	"net/netip"
 	"testing"
 
 	"github.com/libdns/libdns"
@@ -34,16 +36,17 @@ func TestNew(t *testing.T) {
 
 func TestUpdater_checkRecord(t *testing.T) {
 	t.Parallel()
+	slog.SetDefault(slog.New(slog.DiscardHandler))
 	tt := []struct {
 		name        string
-		externalIP  string
+		externalIP  netip.Addr
 		setting     Setting
 		expectedErr string
 		expectFunc  func(m *MockProvider)
 	}{
 		{
 			name:       "success",
-			externalIP: "10.0.0.2",
+			externalIP: netip.MustParseAddr("10.0.0.2"),
 			setting: Setting{
 				Domain:  "example.com.",
 				Records: []string{"sub1", "sub2"},
@@ -51,18 +54,18 @@ func TestUpdater_checkRecord(t *testing.T) {
 			expectFunc: func(m *MockProvider) {
 				m.On("GetRecords", context.Background(), "example.com.").Return(
 					[]libdns.Record{
-						{Name: "sub1.example.com.", Type: "A", Value: "10.0.0.2"},
-						{Name: "sub2.example.com.", Type: "A", Value: "10.0.0.3"},
+						libdns.Address{Name: "sub1.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
+						libdns.Address{Name: "sub2.example.com.", IP: netip.MustParseAddr("10.0.0.3")},
 					}, nil)
 				m.On("SetRecords", context.Background(), "example.com.",
 					[]libdns.Record{
-						{Name: "sub2.example.com.", Type: "A", Value: "10.0.0.2"},
+						libdns.Address{Name: "sub2.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
 					}).Return([]libdns.Record{}, nil)
 			},
 		},
 		{
 			name:       "success noop",
-			externalIP: "10.0.0.2",
+			externalIP: netip.MustParseAddr("10.0.0.2"),
 			setting: Setting{
 				Domain:  "example.com.",
 				Records: []string{"sub1", "sub2"},
@@ -70,14 +73,14 @@ func TestUpdater_checkRecord(t *testing.T) {
 			expectFunc: func(m *MockProvider) {
 				m.On("GetRecords", context.Background(), "example.com.").Return(
 					[]libdns.Record{
-						{Name: "sub1.example.com.", Type: "A", Value: "10.0.0.2"},
-						{Name: "sub2.example.com.", Type: "A", Value: "10.0.0.2"},
+						libdns.Address{Name: "sub1.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
+						libdns.Address{Name: "sub2.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
 					}, nil)
 			},
 		},
 		{
 			name:       "error get records",
-			externalIP: "10.0.0.2",
+			externalIP: netip.MustParseAddr("10.0.0.2"),
 			setting: Setting{
 				Domain:  "example.com.",
 				Records: []string{"sub1", "sub2"},
@@ -89,7 +92,7 @@ func TestUpdater_checkRecord(t *testing.T) {
 		},
 		{
 			name:       "error set records",
-			externalIP: "10.0.0.2",
+			externalIP: netip.MustParseAddr("10.0.0.2"),
 			setting: Setting{
 				Domain:  "example.com.",
 				Records: []string{"sub1", "sub2"},
@@ -98,18 +101,17 @@ func TestUpdater_checkRecord(t *testing.T) {
 			expectFunc: func(m *MockProvider) {
 				m.On("GetRecords", context.Background(), "example.com.").Return(
 					[]libdns.Record{
-						{Name: "sub1.example.com.", Type: "A", Value: "10.0.0.2"},
-						{Name: "sub2.example.com.", Type: "A", Value: "10.0.0.3"},
+						libdns.Address{Name: "sub1.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
+						libdns.Address{Name: "sub2.example.com.", IP: netip.MustParseAddr("10.0.0.3")},
 					}, nil)
 				m.On("SetRecords", context.Background(), "example.com.",
 					[]libdns.Record{
-						{Name: "sub2.example.com.", Type: "A", Value: "10.0.0.2"},
+						libdns.Address{Name: "sub2.example.com.", IP: netip.MustParseAddr("10.0.0.2")},
 					}).Return([]libdns.Record{}, errors.New("some error"))
 			},
 		},
 	}
 	for _, tc := range tt {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
 			m := new(MockProvider)

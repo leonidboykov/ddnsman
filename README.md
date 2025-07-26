@@ -4,7 +4,9 @@ ddnsman (short for Dynamic DNS Manager) allows to set external IP as a DNS recor
 
 ## Supported providers
 
-ddnsman uses [`github.com/libdns`](https://github.com/libdns) to communicate with a list of various providers, i.e. if `libdns` allows to work with specific DNS provider you may use it with `ddnsman`.
+ddnsman uses [`github.com/libdns`](https://github.com/libdns) to communicate with a list of various providers, i.e. if
+`libdns` allows to work with specific DNS provider you may use it with `ddnsman`. Several providers does not support
+requred methods, thus they may be absent.
 
 ## Settings
 
