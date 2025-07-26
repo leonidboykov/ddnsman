@@ -1,5 +1,7 @@
 # ddnsman
 
+[![codecov](https://codecov.io/github/leonidboykov/ddnsman/graph/badge.svg?token=FUdTxriSvs)](https://codecov.io/github/leonidboykov/ddnsman)
+
 ddnsman (short for Dynamic DNS Manager) allows to set external IP as a DNS record for your DNS provider.
 
 ## Supported providers
