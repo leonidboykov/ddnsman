@@ -1,6 +1,6 @@
 module github.com/leonidboykov/ddnsman
 
-go 1.22.0
+go 1.23.0
 
 require (
 	github.com/containrrr/shoutrrr v0.8.0
@@ -49,7 +49,7 @@ require (
 	github.com/libdns/vultr v1.0.0
 	github.com/miekg/dns v1.1.56
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/sync v0.5.0
+	golang.org/x/sync v0.16.0
 )
 
 require (
