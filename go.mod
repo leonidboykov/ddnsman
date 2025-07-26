@@ -1,6 +1,6 @@
 module github.com/leonidboykov/ddnsman
 
-go 1.22.0
+go 1.23.0
 
 require (
 	github.com/containrrr/shoutrrr v0.8.0
@@ -13,7 +13,7 @@ require (
 	github.com/libdns/civo v0.1.20
 	github.com/libdns/cloudflare v0.1.0
 	github.com/libdns/ddnss v0.1.0
-	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
+	github.com/libdns/desec v1.0.1
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
@@ -27,7 +27,7 @@ require (
 	github.com/libdns/hexonet v0.1.0
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
-	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
+	github.com/libdns/libdns v1.0.0-beta.1
 	github.com/libdns/linode v0.4.1
 	github.com/libdns/loopia v0.0.3
 	github.com/libdns/mailinabox v0.0.1
@@ -85,7 +85,6 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
@@ -121,7 +120,6 @@ require (
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.16.0 // indirect
-	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/net v0.19.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect
