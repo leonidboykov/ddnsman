@@ -197,7 +197,6 @@ github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46/go.mod h1:3wb0
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/antchfx/htmlquery v1.2.5 h1:1lXnx46/1wtv1E/kzmH8vrfMuUKYgkdDBA9pIdMJnk4=
 github.com/antchfx/htmlquery v1.2.5/go.mod h1:2MCVBzYVafPBmKbrmwB9F5xdd+IEgRY61ci2oOsOQVw=
-github.com/antchfx/xpath v0.0.0-20170515025933-1f3266e77307/go.mod h1:Yee4kTMuNiPYJ7nSNorELQMr1J33uOpXDMByNYhvtNk=
 github.com/antchfx/xpath v1.2.1 h1:qhp4EW6aCOVr5XIkT+l6LJ9ck/JsUH/yyauNgTQkBF8=
 github.com/antchfx/xpath v1.2.1/go.mod h1:i54GszH55fYfBmoZXapTHN8T8tkcHfRgLyVwwqzXNcs=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
@@ -507,12 +506,12 @@ github.com/libdns/libdns v0.0.0-20200501023120-186724ffc821/go.mod h1:yQCXzk1lEZ
 github.com/libdns/libdns v0.1.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
 github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
 github.com/libdns/libdns v0.2.1/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
-github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e h1:rQoZTxoOHpdC6eXnRSxKnpCfe4SqGvTd0aqz8ZsPTUw=
-github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
+github.com/libdns/libdns v1.0.0 h1:IvYaz07JNz6jUQ4h/fv2R4sVnRnm77J/aOuC9B+TQTA=
+github.com/libdns/libdns v1.0.0/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
 github.com/libdns/linode v0.4.1 h1:Fr22y3aWBzaj3AlFbCQ743eC+5Hss+sJ+OEjtlK61AA=
 github.com/libdns/linode v0.4.1/go.mod h1:BqAJnQxzpnQgy4GDVYf3hQvhLGDc3n8BRwMZ0/9m2y0=
-github.com/libdns/loopia v0.0.3 h1:IsXvZufg4KQ2K5zbUMl5KVvWurVHFQ4YsHti7cSqVCM=
-github.com/libdns/loopia v0.0.3/go.mod h1:EzmOuqFtmIJA5QaBNFjhaGxqTXf6Tj6vJ3Epja0z1oA=
+github.com/libdns/loopia v1.0.0 h1:W8ChptbAy68plkkK8t8A3yi33f8xUm8cRgcCfOgVJ0Q=
+github.com/libdns/loopia v1.0.0/go.mod h1:IueWAV9Ao+W8ZT7IQKpj+cpXHWT12oW8DkOH9+Ad7iM=
 github.com/libdns/mailinabox v0.0.1 h1:In/g4FO2g31PwLEPM9KS+MftAP8G7fa53bcbShg7gAs=
 github.com/libdns/mailinabox v0.0.1/go.mod h1:QVVTTkDKfNjxb5fXL3DRucAekxuHRAIv1KdZ5sCVWAo=
 github.com/libdns/metaname v0.3.0 h1:HJudLYthdv52TupOPczojip/nEQHW7xqk5+whGReva4=
