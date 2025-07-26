@@ -44,7 +44,7 @@ require (
 	github.com/libdns/scaleway v0.1.10
 	github.com/libdns/tencentcloud v1.0.0
 	github.com/libdns/totaluptime v1.0.1
-	github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12
+	github.com/libdns/transip v0.0.0-20240619142000-fc072056ed2e
 	github.com/libdns/vercel v0.0.2
 	github.com/libdns/vultr v1.0.0
 	github.com/miekg/dns v1.1.56
