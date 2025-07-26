@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestConfiguration_shoutrrrURLs(t *testing.T) {
@@ -49,15 +50,15 @@ func TestConfiguration_shoutrrrURLs(t *testing.T) {
 			c := Configuration{ShoutrrrAddrs: tc.addrs}
 			urls, err := c.shoutrrrURLs()
 			assert.Equal(t, tc.urls, urls)
-			assertError(t, err, tc.err)
+			requireError(t, err, tc.err)
 		})
 	}
 }
 
-func assertError(t *testing.T, theError error, errString string) {
+func requireError(t *testing.T, theError error, errString string) {
 	if errString == "" {
-		assert.NoError(t, theError)
+		require.NoError(t, theError)
 		return
 	}
-	assert.EqualError(t, theError, errString)
+	require.EqualError(t, theError, errString)
 }

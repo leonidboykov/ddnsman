@@ -120,7 +120,7 @@ func TestUpdater_checkRecord(t *testing.T) {
 			tc.setting.provider = m
 			u, err := New(&Configuration{})
 			require.NoError(t, err)
-			assertError(t,
+			requireError(t,
 				u.checkRecord(context.Background(), tc.externalIP, tc.setting),
 				tc.expectedErr,
 			)
