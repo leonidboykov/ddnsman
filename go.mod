@@ -5,51 +5,51 @@ go 1.22.0
 require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
-	github.com/goccy/go-yaml v1.11.2
+	github.com/goccy/go-yaml v1.18.0
 	github.com/libdns/acmeproxy v0.0.0-20231225160439-e51d10d5ee53
-	github.com/libdns/alidns v1.0.3
-	github.com/libdns/azure v0.3.0
+	github.com/libdns/alidns v1.0.4
+	github.com/libdns/azure v0.5.0
 	github.com/libdns/bunny v0.1.0
-	github.com/libdns/civo v0.1.20
-	github.com/libdns/cloudflare v0.1.0
+	github.com/libdns/civo v0.1.27
+	github.com/libdns/cloudflare v0.2.1
 	github.com/libdns/ddnss v0.1.0
-	github.com/libdns/desec v0.0.0-20230511111943-7f39ae01f41f
+	github.com/libdns/desec v0.2.4
 	github.com/libdns/digitalocean v0.0.0-20220518195853-a541bc8aa80f
 	github.com/libdns/dinahosting v1.0.0
 	github.com/libdns/dnspod v0.0.3
 	github.com/libdns/dnsupdate v0.0.0-20230728193621-2e79c50ea2ee
-	github.com/libdns/duckdns v0.2.0
+	github.com/libdns/duckdns v0.3.0
 	github.com/libdns/dynv6 v1.0.0
-	github.com/libdns/gandi v1.0.2
+	github.com/libdns/gandi v1.1.0
 	github.com/libdns/godaddy v1.0.3
-	github.com/libdns/googleclouddns v1.1.0
+	github.com/libdns/googleclouddns v1.2.0
 	github.com/libdns/hetzner v0.0.1
 	github.com/libdns/hexonet v0.1.0
-	github.com/libdns/ionos v1.0.2
-	github.com/libdns/leaseweb v0.3.1
-	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
+	github.com/libdns/ionos v1.2.0
+	github.com/libdns/leaseweb v0.4.0
+	github.com/libdns/libdns v0.2.3
 	github.com/libdns/linode v0.4.1
 	github.com/libdns/loopia v0.0.3
-	github.com/libdns/mailinabox v0.0.1
-	github.com/libdns/metaname v0.3.0
+	github.com/libdns/mailinabox v0.1.0
+	github.com/libdns/metaname v0.4.1
 	github.com/libdns/mythicbeasts v1.0.1
 	github.com/libdns/namecheap v0.0.0-20211109042440-fc7440785c8e
 	github.com/libdns/namedotcom v0.3.3
 	github.com/libdns/njalla v0.0.0-20230106195713-96e29ec4149e
 	github.com/libdns/openstack-designate v0.1.0
-	github.com/libdns/ovh v0.0.2
-	github.com/libdns/powerdns v0.1.2
-	github.com/libdns/rfc2136 v0.1.0
-	github.com/libdns/route53 v1.3.3
-	github.com/libdns/scaleway v0.1.10
-	github.com/libdns/tencentcloud v1.0.0
+	github.com/libdns/ovh v0.0.3
+	github.com/libdns/powerdns v0.1.3
+	github.com/libdns/rfc2136 v0.2.1
+	github.com/libdns/route53 v1.5.1
+	github.com/libdns/scaleway v0.2.2
+	github.com/libdns/tencentcloud v1.4.2
 	github.com/libdns/totaluptime v1.0.1
 	github.com/libdns/transip v0.0.0-20211011153753-1c0ec90e7a12
 	github.com/libdns/vercel v0.0.2
 	github.com/libdns/vultr v1.0.0
-	github.com/miekg/dns v1.1.56
-	github.com/stretchr/testify v1.8.4
-	golang.org/x/sync v0.5.0
+	github.com/miekg/dns v1.1.67
+	github.com/stretchr/testify v1.10.0
+	golang.org/x/sync v0.16.0
 )
 
 require (
