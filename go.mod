@@ -27,10 +27,10 @@ require (
 	github.com/libdns/hexonet v0.1.0
 	github.com/libdns/ionos v1.0.2
 	github.com/libdns/leaseweb v0.3.1
-	github.com/libdns/libdns v0.2.2-0.20230501153445-5344f2e6777e
+	github.com/libdns/libdns v1.1.0
 	github.com/libdns/linode v0.4.1
 	github.com/libdns/loopia v0.0.3
-	github.com/libdns/mailinabox v0.0.1
+	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.3.0
 	github.com/libdns/mythicbeasts v1.0.1
 	github.com/libdns/namecheap v0.0.0-20211109042440-fc7440785c8e
@@ -75,6 +75,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.8 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.9 // indirect
 	github.com/aws/smithy-go v1.13.5 // indirect
+	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
 	github.com/civo/civogo v0.3.47 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.41.0 // indirect
@@ -101,7 +102,7 @@ require (
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/linode/linodego v1.23.0 // indirect
-	github.com/luv2code/gomiabdns v1.0.0 // indirect
+	github.com/luv2code/gomiabdns v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mittwald/go-powerdns v0.5.2 // indirect
@@ -114,9 +115,13 @@ require (
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/pquerna/otp v1.4.0 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.21 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.597 // indirect
+	github.com/tidwall/gjson v1.18.0 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/transip/gotransip/v6 v6.6.1 // indirect
 	github.com/vultr/govultr/v3 v3.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
