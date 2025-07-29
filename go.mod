@@ -20,7 +20,7 @@ require (
 	github.com/libdns/domainnameshop v0.2.1
 	github.com/libdns/duckdns v0.3.0
 	github.com/libdns/dynu v1.0.0
-	github.com/libdns/edgeone v0.0.0-20250723013436-1d60112fecc1
+	github.com/libdns/edgeone v1.0.0-beta.1
 	github.com/libdns/gandi v1.1.0
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833
 	github.com/libdns/glesys v1.0.0
