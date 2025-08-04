@@ -27,7 +27,7 @@ require (
 	github.com/libdns/googleclouddns v1.2.0
 	github.com/libdns/he v1.2.0
 	github.com/libdns/hetzner v1.0.0
-	github.com/libdns/huaweicloud v1.0.0-beta.2
+	github.com/libdns/huaweicloud v1.0.0
 	github.com/libdns/infomaniak v0.2.0
 	github.com/libdns/inwx v0.3.0
 	github.com/libdns/ionos v1.2.0
