@@ -48,7 +48,7 @@ require (
 	github.com/libdns/simplydotcom v1.0.0
 	github.com/libdns/tencentcloud v1.4.2
 	github.com/libdns/westcn v1.0.2
-	github.com/miekg/dns v1.1.67
+	github.com/miekg/dns v1.1.68
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/sync v0.16.0
 )
