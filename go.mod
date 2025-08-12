@@ -6,7 +6,7 @@ require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.18.0
-	github.com/libdns/acmedns v0.3.0-beta.2
+	github.com/libdns/acmedns v0.4.0
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd
 	github.com/libdns/alidns v1.0.5-libdns.v1.beta1
 	github.com/libdns/azure v0.5.0
@@ -48,7 +48,7 @@ require (
 	github.com/libdns/simplydotcom v1.0.0
 	github.com/libdns/tencentcloud v1.4.2
 	github.com/libdns/westcn v1.0.2
-	github.com/miekg/dns v1.1.67
+	github.com/miekg/dns v1.1.68
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/sync v0.16.0
 )
