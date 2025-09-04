@@ -6,7 +6,7 @@ require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.18.0
-	github.com/libdns/acmedns v0.3.0-beta.2
+	github.com/libdns/acmedns v0.4.0
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd
 	github.com/libdns/alidns v1.0.5-libdns.v1.beta1
 	github.com/libdns/azure v0.5.0
@@ -31,7 +31,7 @@ require (
 	github.com/libdns/infomaniak v0.2.0
 	github.com/libdns/inwx v0.3.0
 	github.com/libdns/ionos v1.2.0
-	github.com/libdns/libdns v1.1.0
+	github.com/libdns/libdns v1.1.1
 	github.com/libdns/loopia v1.0.0
 	github.com/libdns/luadns v0.2.0
 	github.com/libdns/mailinabox v1.0.0
@@ -44,12 +44,12 @@ require (
 	github.com/libdns/porkbun v1.1.0
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca
 	github.com/libdns/rfc2136 v1.0.1
-	github.com/libdns/scaleway v0.2.2
+	github.com/libdns/scaleway v0.2.3
 	github.com/libdns/simplydotcom v1.0.0
 	github.com/libdns/tencentcloud v1.4.2
 	github.com/libdns/westcn v1.0.2
-	github.com/miekg/dns v1.1.67
-	github.com/stretchr/testify v1.10.0
+	github.com/miekg/dns v1.1.68
+	github.com/stretchr/testify v1.11.1
 	golang.org/x/sync v0.16.0
 )
 
@@ -96,7 +96,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/pquerna/otp v1.4.0 // indirect
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.34 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
