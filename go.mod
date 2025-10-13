@@ -31,12 +31,12 @@ require (
 	github.com/libdns/infomaniak v0.2.0
 	github.com/libdns/inwx v0.3.0
 	github.com/libdns/ionos v1.2.0
-	github.com/libdns/libdns v1.1.0
+	github.com/libdns/libdns v1.1.1
 	github.com/libdns/loopia v1.0.0
 	github.com/libdns/luadns v0.2.0
 	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.4.1
-	github.com/libdns/mijnhost v0.2.0
+	github.com/libdns/mijnhost v1.1.0
 	github.com/libdns/namesilo v1.0.0
 	github.com/libdns/netcup v1.0.0
 	github.com/libdns/nfsn v1.0.0
@@ -91,6 +91,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.15.0 // indirect
 	github.com/onsi/gomega v1.31.1 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
+	github.com/pbergman/provider v0.0.0-20251011120131-748ccf3d6dd7 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
