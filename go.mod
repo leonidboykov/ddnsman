@@ -5,27 +5,27 @@ go 1.26
 require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
-	github.com/goccy/go-yaml v1.18.0
-	github.com/libdns/acmedns v0.3.0-beta.2
+	github.com/goccy/go-yaml v1.19.2
+	github.com/libdns/acmedns v0.5.0
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd
-	github.com/libdns/alidns v1.0.5-libdns.v1.beta1
+	github.com/libdns/alidns v1.0.7
 	github.com/libdns/all-inkl v0.2.4
 	github.com/libdns/arvancloud v0.1.0
 	github.com/libdns/autodns v0.0.0-20251216190413-fcfa8bc241fc
 	github.com/libdns/azure v0.5.0
 	github.com/libdns/bluecat v0.1.5
-	github.com/libdns/bunny v1.5.0
-	github.com/libdns/cloudflare v0.2.1
+	github.com/libdns/bunny v1.6.1
+	github.com/libdns/cloudflare v0.2.2
 	github.com/libdns/cloudns v1.1.0
 	github.com/libdns/conoha v0.1.1
-	github.com/libdns/desec v1.0.1
+	github.com/libdns/desec v1.1.1
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31
 	github.com/libdns/dinahosting/v2 v2.0.1
-	github.com/libdns/directadmin v0.4.0
+	github.com/libdns/directadmin v0.4.2
 	github.com/libdns/dnsexit v1.1.1
-	github.com/libdns/dnsimple v0.4.0
+	github.com/libdns/dnsimple v0.5.0
 	github.com/libdns/dnsupdate v0.0.0-20260121201600-04be14686a54
-	github.com/libdns/domainnameshop v0.2.1
+	github.com/libdns/domainnameshop v0.2.2
 	github.com/libdns/dreamhost v0.2.0
 	github.com/libdns/duckdns v0.3.0
 	github.com/libdns/dynu v1.0.0
@@ -37,12 +37,12 @@ require (
 	github.com/libdns/glesys v1.0.0
 	github.com/libdns/godaddy v1.1.0
 	github.com/libdns/googleclouddns v1.2.0
-	github.com/libdns/he v1.2.0
+	github.com/libdns/he v1.2.2
 	github.com/libdns/hetzner v1.0.0
 	github.com/libdns/httpnet v1.0.0
-	github.com/libdns/huaweicloud v1.0.0-beta.2
+	github.com/libdns/huaweicloud v1.0.1
 	github.com/libdns/infomaniak v0.2.0
-	github.com/libdns/inwx v0.3.0
+	github.com/libdns/inwx v0.3.1
 	github.com/libdns/ionos v1.2.0
 	github.com/libdns/libdns v1.1.1
 	github.com/libdns/linode v0.5.0
@@ -68,12 +68,12 @@ require (
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca
 	github.com/libdns/rfc2136 v1.0.1
 	github.com/libdns/route53 v1.6.2
-	github.com/libdns/scaleway v0.2.2
+	github.com/libdns/scaleway v0.2.4
 	github.com/libdns/servercow v0.1.0
 	github.com/libdns/simplydotcom v1.0.0
 	github.com/libdns/spaceship v1.0.0
 	github.com/libdns/tecnocratica v0.1.5
-	github.com/libdns/tencentcloud v1.4.2
+	github.com/libdns/tencentcloud v1.4.3
 	github.com/libdns/thelittlehost v1.0.1
 	github.com/libdns/timeweb v1.1.1
 	github.com/libdns/transip v1.1.2
@@ -82,7 +82,7 @@ require (
 	github.com/libdns/vultr/v2 v2.0.4
 	github.com/libdns/wedos v1.0.4
 	github.com/libdns/westcn v1.0.2
-	github.com/miekg/dns v1.1.70
+	github.com/miekg/dns v1.1.72
 	github.com/stretchr/testify v1.11.1
 	golang.org/x/sync v0.19.0
 )
@@ -97,6 +97,8 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dns/armdns v1.2.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.4.2 // indirect
 	github.com/G-Core/gcore-dns-sdk-go v0.3.0 // indirect
+	github.com/PuerkitoBio/purell v1.1.1 // indirect
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/adamantal/go-dreamhost v0.1.1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20200907205600-7a23bdc65eef // indirect
 	github.com/aws/aws-sdk-go-v2 v1.39.1 // indirect
@@ -113,33 +115,32 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.35.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.38.5 // indirect
 	github.com/aws/smithy-go v1.23.0 // indirect
-	github.com/boombuler/barcode v1.0.1 // indirect
+	github.com/boombuler/barcode v1.0.2 // indirect
 	github.com/cellebyte/go-pph v0.0.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/clbanning/mxj v1.8.4 // indirect
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/digitalocean/godo v1.148.0 // indirect
-	github.com/dnsimple/dnsimple-go/v5 v5.0.0 // indirect
+	github.com/dnsimple/dnsimple-go/v8 v8.0.0 // indirect
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/analysis v0.19.16 // indirect
 	github.com/go-openapi/errors v0.19.9 // indirect
-	github.com/go-openapi/jsonpointer v0.19.6 // indirect
-	github.com/go-openapi/jsonreference v0.20.1 // indirect
+	github.com/go-openapi/jsonpointer v0.19.5 // indirect
+	github.com/go-openapi/jsonreference v0.19.5 // indirect
 	github.com/go-openapi/loads v0.20.0 // indirect
 	github.com/go-openapi/runtime v0.19.24 // indirect
 	github.com/go-openapi/spec v0.20.0 // indirect
 	github.com/go-openapi/strfmt v0.19.11 // indirect
-	github.com/go-openapi/swag v0.22.3 // indirect
+	github.com/go-openapi/swag v0.19.12 // indirect
 	github.com/go-openapi/validate v0.20.0 // indirect
 	github.com/go-resty/resty/v2 v2.16.5 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/gofrs/flock v0.10.0 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.2 // indirect
-	github.com/google/go-querystring v1.1.0 // indirect
-	github.com/google/pprof v0.0.0-20210720184732-4bb14d4b1be1 // indirect
+	github.com/google/go-querystring v1.2.0 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.6 // indirect
@@ -152,23 +153,21 @@ require (
 	github.com/linode/linodego v1.56.0 // indirect
 	github.com/luadns/luadns-go v0.3.0 // indirect
 	github.com/luv2code/gomiabdns v1.1.0 // indirect
-	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mittwald/go-powerdns v0.6.6 // indirect
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
-	github.com/onsi/ginkgo/v2 v2.15.0 // indirect
-	github.com/onsi/gomega v1.31.1 // indirect
 	github.com/oracle/oci-go-sdk/v65 v65.109.2 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
 	github.com/pbergman/provider v1.1.1 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/pquerna/otp v1.4.0 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.36 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/sony/gobreaker v0.5.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
@@ -184,15 +183,15 @@ require (
 	go.opentelemetry.io/otel v1.35.0 // indirect
 	go.opentelemetry.io/otel/metric v1.35.0 // indirect
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
-	go.uber.org/multierr v1.10.0 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
 	golang.org/x/crypto v0.47.0 // indirect
 	golang.org/x/mod v0.32.0 // indirect
 	golang.org/x/net v0.49.0 // indirect
-	golang.org/x/oauth2 v0.30.0 // indirect
+	golang.org/x/oauth2 v0.34.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
-	golang.org/x/time v0.12.0 // indirect
+	golang.org/x/time v0.15.0 // indirect
 	golang.org/x/tools v0.41.0 // indirect
 	google.golang.org/api v0.233.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250505200425-f936aa4a68b2 // indirect
