@@ -50,7 +50,7 @@ require (
 	github.com/libdns/luadns v0.2.0
 	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.4.1
-	github.com/libdns/mijnhost v0.2.0
+	github.com/libdns/mijnhost v1.2.1
 	github.com/libdns/mythicbeasts v1.0.4
 	github.com/libdns/namecheap v1.0.0
 	github.com/libdns/namesilo v1.0.0
