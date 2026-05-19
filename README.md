@@ -40,3 +40,5 @@ Here is an example:
 ```
 
 Proper docs are coming soon.
+
+Use command `curl -L https://api.github.com/orgs/libdns/repos?per_page=100 | jq -r "sort_by(.full_name) | .[].full_name"` to check available repositories.
