@@ -1,6 +1,7 @@
 package ddnsman
 
 import (
+	"cmp"
 	"encoding/json"
 	"fmt"
 	"net/url"
@@ -10,6 +11,8 @@ import (
 	"github.com/goccy/go-yaml"
 	"github.com/miekg/dns"
 )
+
+const defaultRefreshInterval = 5 * time.Minute
 
 type Configuration struct {
 	Interval      time.Duration           `json:"interval"`
@@ -50,18 +53,12 @@ func (c Configuration) shoutrrrURLs() ([]string, error) {
 }
 
 func LoadConfiguration() (*Configuration, error) {
-	configPath := os.Getenv("CONFIG_PATH")
-	if configPath == "" {
-		configPath = "ddnsman.json"
-	}
-
+	configPath := cmp.Or(os.Getenv("CONFIG_PATH"), "ddnsman.json")
 	config, err := readConfiguration(configPath)
 	if err != nil {
 		return nil, fmt.Errorf("read config: %w", err)
 	}
-	if config.Interval == 0 {
-		config.Interval = 5 * time.Minute
-	}
+	config.Interval = cmp.Or(config.Interval, defaultRefreshInterval)
 	processConfiguration(config)
 	return config, nil
 }
