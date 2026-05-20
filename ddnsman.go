@@ -113,7 +113,7 @@ func (u *Updater) checkRecord(ctx context.Context, externalIP netip.Addr, settin
 			if providerName == targetRecord && providerAddressRecord.IP != externalIP {
 				logger.Info("IP address mismatch",
 					slog.String("record", providerName),
-					slog.String("record IP", providerAddressRecord.IP.String()),
+					slog.Any("record IP", providerAddressRecord.IP),
 					slog.Any("external IP", externalIP),
 				)
 				providerAddressRecord.IP = externalIP
