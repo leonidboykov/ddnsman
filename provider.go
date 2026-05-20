@@ -3,7 +3,6 @@ package ddnsman
 import (
 	"encoding/json"
 	"fmt"
-	"log/slog"
 
 	"github.com/libdns/libdns"
 
@@ -100,12 +99,10 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 
 	switch providerName {
 	case "acmedns":
-		slog.Warn("acmedns is in a beta state. It may not work as expected.")
 		return readProvider[acmedns.Provider](data)
 	case "acmeproxy":
 		return readProvider[acmeproxy.Provider](data)
 	case "alidns":
-		slog.Warn("alidns is in a beta state. It may not work as expected.")
 		return readProvider[alidns.Provider](data)
 	case "all-inkl":
 		return readProvider[allinkl.Provider](data)
@@ -185,7 +182,6 @@ func newProvider(providerName string, data json.RawMessage) (Provider, error) {
 	case "httpnet":
 		return readProvider[httpnet.Provider](data)
 	case "huaweicloud":
-		slog.Warn("huaweicloud is in a beta state. It may not work as expected.")
 		return readProvider[huaweicloud.Provider](data)
 	case "infomaniak":
 		return readProvider[infomaniak.Provider](data)
