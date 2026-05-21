@@ -508,8 +508,8 @@ github.com/libdns/metaname v0.4.1 h1:uTMnGnFnLGaSobuP1rnLVlDshc7BD6ImKeg/4agd5Tg
 github.com/libdns/metaname v0.4.1/go.mod h1:8ScdpqoOsG7n+nc2Y7hnEyttiTqspq/VxRg9mjSviHY=
 github.com/libdns/mijnhost v1.2.1 h1:wdyx+6LOKwRXdvsE9QooheCth1DSKGBjXTzlvbPokZ8=
 github.com/libdns/mijnhost v1.2.1/go.mod h1:h39C52Q1Lcj+uIwdoEkBl+csYSYsjilHMMYXsN8u3vg=
-github.com/libdns/mythicbeasts v1.0.4 h1:65qO7oJa+Rstt1p3b5sQwAisBJ4g/ER+U+d8QlqNows=
-github.com/libdns/mythicbeasts v1.0.4/go.mod h1:f9VW699ZaFYowISAnYUD1KO4/guwavLWGlwA8RTYg1I=
+github.com/libdns/mythicbeasts v1.0.5 h1:7kkezEPa49ydedpuMzdKKHS/59+sh2V10JlJu6P4I8c=
+github.com/libdns/mythicbeasts v1.0.5/go.mod h1:f9VW699ZaFYowISAnYUD1KO4/guwavLWGlwA8RTYg1I=
 github.com/libdns/namecheap v1.0.0 h1:cZK8w4Y1AJQCtL5bjqnFpYBnI1k/mzJhljcKAP5vPd8=
 github.com/libdns/namecheap v1.0.0/go.mod h1:v57RUzOgOGVnI9wY3uqPEanSrKx2I1YgR24uep/ys9Y=
 github.com/libdns/namesilo v1.0.0 h1:Shwbj9YnSp4NR617sBOSfDkFozEnWInWCxNwrDvPkCg=

@@ -51,7 +51,7 @@ require (
 	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.4.1
 	github.com/libdns/mijnhost v1.2.1
-	github.com/libdns/mythicbeasts v1.0.4
+	github.com/libdns/mythicbeasts v1.0.5
 	github.com/libdns/namecheap v1.0.0
 	github.com/libdns/namesilo v1.0.0
 	github.com/libdns/netcup v1.0.0
