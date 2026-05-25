@@ -11,7 +11,7 @@ require (
 	github.com/libdns/alidns v1.0.7
 	github.com/libdns/all-inkl v0.2.4
 	github.com/libdns/arvancloud v0.1.0
-	github.com/libdns/autodns v0.0.0-20251216190413-fcfa8bc241fc
+	github.com/libdns/autodns v0.1.0
 	github.com/libdns/azure v0.5.0
 	github.com/libdns/bluecat v0.1.5
 	github.com/libdns/bunny v1.6.1
@@ -51,7 +51,7 @@ require (
 	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.4.1
 	github.com/libdns/mijnhost v1.2.1
-	github.com/libdns/mythicbeasts v1.0.4
+	github.com/libdns/mythicbeasts v1.0.6
 	github.com/libdns/namecheap v1.0.0
 	github.com/libdns/namesilo v1.0.0
 	github.com/libdns/netcup v1.0.0
@@ -68,7 +68,7 @@ require (
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca
 	github.com/libdns/rfc2136 v1.0.1
 	github.com/libdns/route53 v1.6.2
-	github.com/libdns/scaleway v0.2.4
+	github.com/libdns/scaleway v0.3.1
 	github.com/libdns/servercow v0.1.0
 	github.com/libdns/simplydotcom v1.0.0
 	github.com/libdns/spaceship v1.0.0
