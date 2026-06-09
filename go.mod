@@ -84,7 +84,7 @@ require (
 	github.com/libdns/westcn v1.0.2
 	github.com/miekg/dns v1.1.72
 	github.com/stretchr/testify v1.11.1
-	golang.org/x/sync v0.20.0
+	golang.org/x/sync v0.21.0
 )
 
 require (
