@@ -46,7 +46,7 @@ require (
 	github.com/libdns/ionos v1.2.0
 	github.com/libdns/libdns v1.1.1
 	github.com/libdns/linode v0.5.0
-	github.com/libdns/loopia v1.0.0
+	github.com/libdns/loopia v1.0.1
 	github.com/libdns/luadns v0.2.0
 	github.com/libdns/mailinabox v1.0.0
 	github.com/libdns/metaname v0.4.1
@@ -63,7 +63,7 @@ require (
 	github.com/libdns/ovh v1.1.0
 	github.com/libdns/porkbun v1.1.0
 	github.com/libdns/powerdns v0.1.4
-	github.com/libdns/pph v0.0.2
+	github.com/libdns/pph v0.0.3
 	github.com/libdns/regery v1.1.0
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca
 	github.com/libdns/rfc2136 v1.0.1
@@ -84,7 +84,7 @@ require (
 	github.com/libdns/westcn v1.0.2
 	github.com/miekg/dns v1.1.72
 	github.com/stretchr/testify v1.11.1
-	golang.org/x/sync v0.20.0
+	golang.org/x/sync v0.21.0
 )
 
 require (
