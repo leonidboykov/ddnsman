@@ -9,7 +9,7 @@ require (
 	github.com/libdns/acmedns v0.5.0
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd
 	github.com/libdns/alidns v1.0.7
-	github.com/libdns/all-inkl v0.2.4
+	github.com/libdns/all-inkl v0.2.5
 	github.com/libdns/arvancloud v0.1.0
 	github.com/libdns/autodns v0.1.0
 	github.com/libdns/azure v0.5.0
