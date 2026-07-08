@@ -9,14 +9,14 @@ require (
 	github.com/libdns/acmedns v0.5.0
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd
 	github.com/libdns/alidns v1.0.7
-	github.com/libdns/all-inkl v0.2.4
+	github.com/libdns/all-inkl v0.2.5
 	github.com/libdns/arvancloud v0.1.0
 	github.com/libdns/autodns v0.1.0
 	github.com/libdns/azure v0.5.0
 	github.com/libdns/bluecat v0.1.5
 	github.com/libdns/bunny v1.6.1
 	github.com/libdns/cloudflare v0.2.2
-	github.com/libdns/cloudns v1.1.0
+	github.com/libdns/cloudns v1.2.0
 	github.com/libdns/conoha v0.1.1
 	github.com/libdns/desec v1.1.1
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31
