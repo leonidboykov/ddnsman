@@ -449,8 +449,8 @@ github.com/libdns/dinahosting/v2 v2.0.1 h1:v/w4Oye+j3+HCowGHCQcSSVFFtfW+ejO3O6fs
 github.com/libdns/dinahosting/v2 v2.0.1/go.mod h1:VNk02p88LQYnm9nacEaKPw9Ntb7RnOYSNUTI/UZj+VA=
 github.com/libdns/directadmin v0.4.2 h1:VrzYnDhR2DEwJkqHLa+IKnmbLa1KD3ONvGsIgzAMeCM=
 github.com/libdns/directadmin v0.4.2/go.mod h1:Lq6dEKAZzdLR9m5GQqatDwJnCl182rlqSzlEK2f/JM0=
-github.com/libdns/dnsexit v1.1.4 h1:tfeHorDRVnzDZCjWUrjXoqWIJZQqV7WWSbYSQt+u2js=
-github.com/libdns/dnsexit v1.1.4/go.mod h1:M11Rgka0pQJ0n4Z0oz3YkprTVtGoY+uKU6B7pxxPkmU=
+github.com/libdns/dnsexit v1.2.0 h1:aqrbabCIdOy1vfJpZwoiaBUKyOUIC/KBamzKutVPJtw=
+github.com/libdns/dnsexit v1.2.0/go.mod h1:M11Rgka0pQJ0n4Z0oz3YkprTVtGoY+uKU6B7pxxPkmU=
 github.com/libdns/dnsimple v0.5.0 h1:hHXhaEYp3N5YVfLoMG4I1uiPm1WdqDKBTgo5N/tAGdQ=
 github.com/libdns/dnsimple v0.5.0/go.mod h1:6okyb4POCzHswMNrJcqCXYE/p/r8+L51Ag/B6E4FsnE=
 github.com/libdns/dnsupdate v0.0.0-20260121201600-04be14686a54 h1:Vab9iPuCIlllQFMIFnCf3UCcPn6Fp2rv46crn4ATJgY=

@@ -22,7 +22,7 @@ require (
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31
 	github.com/libdns/dinahosting/v2 v2.0.1
 	github.com/libdns/directadmin v0.4.2
-	github.com/libdns/dnsexit v1.1.4
+	github.com/libdns/dnsexit v1.2.0
 	github.com/libdns/dnsimple v0.5.0
 	github.com/libdns/dnsupdate v0.0.0-20260121201600-04be14686a54
 	github.com/libdns/domainnameshop v0.2.2
