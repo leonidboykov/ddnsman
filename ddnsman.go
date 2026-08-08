@@ -2,6 +2,7 @@ package ddnsman
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"log/slog"
 	"net/netip"
@@ -71,9 +72,9 @@ func (u *Updater) process(ctx context.Context) error {
 	if err != nil {
 		return fmt.Errorf("fetch external IP: %w", err)
 	}
-	externalIPAddr, err := netip.ParseAddr(externalIP.String())
-	if err != nil {
-		return fmt.Errorf("parse external IP: %w", err)
+	externalIPAddr, ok := netip.AddrFromSlice(externalIP)
+	if !ok {
+		return errors.New("parse external IP")
 	}
 	if externalIPAddr == u.currentIP {
 		// Skip check if external IP hasn't changed.
