@@ -3,6 +3,7 @@ module github.com/leonidboykov/ddnsman
 go 1.26
 
 require (
+	codeberg.org/miekg/dns v0.6.90
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.19.2
@@ -82,7 +83,6 @@ require (
 	github.com/libdns/vultr/v2 v2.0.4
 	github.com/libdns/wedos v1.0.4
 	github.com/libdns/westcn v1.0.2
-	github.com/miekg/dns v1.1.72
 	github.com/stretchr/testify v1.11.1
 	golang.org/x/sync v0.22.0
 )
@@ -156,6 +156,7 @@ require (
 	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/miekg/dns v1.1.72 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mittwald/go-powerdns v0.6.6 // indirect
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
@@ -196,7 +197,7 @@ require (
 	google.golang.org/api v0.233.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250505200425-f936aa4a68b2 // indirect
 	google.golang.org/grpc v1.72.0 // indirect
-	google.golang.org/protobuf v1.36.6 // indirect
+	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

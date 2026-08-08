@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
+	"codeberg.org/miekg/dns/dnsutil"
 	"github.com/goccy/go-yaml"
-	"github.com/miekg/dns"
 )
 
 const defaultRefreshInterval = 5 * time.Minute
@@ -83,7 +83,7 @@ func processConfiguration(config *Configuration) error {
 			return fmt.Errorf("create a new provider: %w", err)
 		}
 		config.Settings[idx].provider = provider
-		config.Settings[idx].Domain = dns.Fqdn(config.Settings[idx].Domain)
+		config.Settings[idx].Domain = dnsutil.Fqdn(config.Settings[idx].Domain)
 	}
 	return nil
 }
