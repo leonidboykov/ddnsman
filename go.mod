@@ -83,7 +83,7 @@ require (
 	github.com/libdns/vultr/v2 v2.0.4
 	github.com/libdns/wedos v1.0.4
 	github.com/libdns/westcn v1.0.2
-	github.com/stretchr/testify v1.11.1
+	github.com/stretchr/testify v1.12.0
 	golang.org/x/sync v0.22.0
 )
 
@@ -119,7 +119,6 @@ require (
 	github.com/cellebyte/go-pph v0.0.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/clbanning/mxj v1.8.4 // indirect
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/digitalocean/godo v1.148.0 // indirect
 	github.com/dnsimple/dnsimple-go/v8 v8.0.0 // indirect
 	github.com/fatih/color v1.16.0 // indirect
@@ -165,13 +164,12 @@ require (
 	github.com/pbergman/provider v1.1.1 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.36 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/sony/gobreaker v0.5.0 // indirect
-	github.com/stretchr/objx v0.5.2 // indirect
+	github.com/stretchr/objx v0.5.3 // indirect
 	github.com/tiaguinho/gosoap v1.4.4 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
