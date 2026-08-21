@@ -3,7 +3,7 @@ module github.com/leonidboykov/ddnsman
 go 1.26
 
 require (
-	codeberg.org/miekg/dns v0.6.90
+	codeberg.org/miekg/dns v0.6.91
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.19.2
@@ -83,7 +83,7 @@ require (
 	github.com/libdns/vultr/v2 v2.0.4
 	github.com/libdns/wedos v1.0.4
 	github.com/libdns/westcn v1.0.2
-	github.com/stretchr/testify v1.11.1
+	github.com/stretchr/testify v1.12.1
 	golang.org/x/sync v0.22.0
 )
 
@@ -119,7 +119,6 @@ require (
 	github.com/cellebyte/go-pph v0.0.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/clbanning/mxj v1.8.4 // indirect
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/digitalocean/godo v1.148.0 // indirect
 	github.com/dnsimple/dnsimple-go/v8 v8.0.0 // indirect
 	github.com/fatih/color v1.16.0 // indirect
@@ -165,13 +164,12 @@ require (
 	github.com/pbergman/provider v1.1.1 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.36 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/sony/gobreaker v0.5.0 // indirect
-	github.com/stretchr/objx v0.5.2 // indirect
+	github.com/stretchr/objx v0.5.3 // indirect
 	github.com/tiaguinho/gosoap v1.4.4 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
@@ -186,6 +184,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
+	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	golang.org/x/crypto v0.54.0 // indirect
 	golang.org/x/mod v0.37.0 // indirect
 	golang.org/x/net v0.57.0 // indirect
@@ -200,5 +199,4 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
