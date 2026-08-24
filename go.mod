@@ -3,7 +3,7 @@ module github.com/leonidboykov/ddnsman
 go 1.26
 
 require (
-	codeberg.org/miekg/dns v0.6.91
+	codeberg.org/miekg/dns v0.6.101
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.19.2
