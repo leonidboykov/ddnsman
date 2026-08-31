@@ -18,8 +18,8 @@ cloud.google.com/go/datastore v1.0.0/go.mod h1:LXYbyblFSglQ5pkeyhO+Qmw7ukd3C+pD7
 cloud.google.com/go/firestore v1.1.0/go.mod h1:ulACoGHTpvq5r8rxGJ4ddJZBZqakUQqClKRT5SZwBmk=
 cloud.google.com/go/pubsub v1.0.1/go.mod h1:R0Gpsv3s54REJCy4fxDixWD93lHJMoZTyQ2kNxGRt3I=
 cloud.google.com/go/storage v1.0.0/go.mod h1:IhtSnM/ZTZV8YYJWCY8RULGVqBDmpoyjwiyrjsg+URw=
-codeberg.org/miekg/dns v0.6.101 h1:9YUafkJzfPr0ZS2WK5N3w1avfS+9O1aaMRJnKLht0ys=
-codeberg.org/miekg/dns v0.6.101/go.mod h1:58Y3ZTg6Z5ZEm/ZAAwHehbZfrD4u5mE4RByHoPEMyKk=
+codeberg.org/miekg/dns v0.6.105 h1:Z6uaCoVPDEGdPdRKGmllBBeSsXSlE5bnWsEPQKgE5T4=
+codeberg.org/miekg/dns v0.6.105/go.mod h1:vbidSyLJl5JcDUL2LrXCUjRYSFa5tJweseQox0GOrTk=
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 github.com/Azure/azure-sdk-for-go/sdk/azcore v1.18.0 h1:Gt0j3wceWMwPmiazCa8MzMA0MfhmPIz0Qp0FJ6qcM0U=
 github.com/Azure/azure-sdk-for-go/sdk/azcore v1.18.0/go.mod h1:Ot/6aikWnKWi4l9QB7qVSwa8iMphQNqkWALMoNT3rzM=
@@ -515,8 +515,8 @@ github.com/libdns/mythicbeasts v1.0.6 h1:XPfowIJUI79+mnnZaibhLB2ZL8h30nPpLw3IlV9
 github.com/libdns/mythicbeasts v1.0.6/go.mod h1:JpVon2+2BPKtPnojVh+MF8lgRbp/nd5GquKUqBcC5Co=
 github.com/libdns/namecheap v1.0.0 h1:cZK8w4Y1AJQCtL5bjqnFpYBnI1k/mzJhljcKAP5vPd8=
 github.com/libdns/namecheap v1.0.0/go.mod h1:v57RUzOgOGVnI9wY3uqPEanSrKx2I1YgR24uep/ys9Y=
-github.com/libdns/namesilo v1.0.0 h1:Shwbj9YnSp4NR617sBOSfDkFozEnWInWCxNwrDvPkCg=
-github.com/libdns/namesilo v1.0.0/go.mod h1:qdojVsogA6eZDjDPdpIUIfv4ymiX+FuqcVV1eNmHDss=
+github.com/libdns/namesilo v1.1.0 h1:cFG3V5SOTk3kpjiJZb1NPFZu2EACXfrOyNSqQ1xH1w4=
+github.com/libdns/namesilo v1.1.0/go.mod h1:ndr1T+DizW+go/96J2cMhO9eFHQQNp70gZZQAK6bcGA=
 github.com/libdns/netcup v1.0.0 h1:+hXRhnCWPTBhsuZX+laBrWt+ijDINoq7zVbaA2UHFuY=
 github.com/libdns/netcup v1.0.0/go.mod h1:yfRQIwtgK9T3o2MZjMrPJhtJgH2uHNWJQfZ1n28J/3I=
 github.com/libdns/netlify v1.2.0 h1:ex2CEtbuPK6y/lCW3F+OCW5DPLEFyAu6ODEgQyUrick=
