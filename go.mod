@@ -59,7 +59,7 @@ require (
 	github.com/libdns/netlify v1.2.0
 	github.com/libdns/netnod v1.0.0
 	github.com/libdns/nfsn v1.0.0
-	github.com/libdns/njalla v0.0.0-20250815081032-a55a87a8f20f
+	github.com/libdns/njalla v1.0.0
 	github.com/libdns/oraclecloud v1.1.2
 	github.com/libdns/ovh v1.1.0
 	github.com/libdns/porkbun v1.1.0
