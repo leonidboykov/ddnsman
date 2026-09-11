@@ -1,9 +1,9 @@
 module github.com/leonidboykov/ddnsman
 
-go 1.26
+go 1.27.0
 
 require (
-	codeberg.org/miekg/dns v0.6.101
+	codeberg.org/miekg/dns v0.6.109
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/glendc/go-external-ip v0.1.0
 	github.com/goccy/go-yaml v1.19.2
@@ -14,7 +14,7 @@ require (
 	github.com/libdns/arvancloud v0.1.0
 	github.com/libdns/autodns v0.1.0
 	github.com/libdns/azure v0.5.0
-	github.com/libdns/bluecat v0.1.5
+	github.com/libdns/bluecat v0.1.7
 	github.com/libdns/bunny v1.6.1
 	github.com/libdns/cloudflare v0.2.2
 	github.com/libdns/cloudns v1.2.0
@@ -54,7 +54,7 @@ require (
 	github.com/libdns/mijnhost v1.2.1
 	github.com/libdns/mythicbeasts v1.0.6
 	github.com/libdns/namecheap v1.0.0
-	github.com/libdns/namesilo v1.0.0
+	github.com/libdns/namesilo v1.1.1
 	github.com/libdns/netcup v1.0.0
 	github.com/libdns/netlify v1.2.0
 	github.com/libdns/netnod v1.0.0
@@ -84,7 +84,7 @@ require (
 	github.com/libdns/wedos v1.0.4
 	github.com/libdns/westcn v1.0.2
 	github.com/stretchr/testify v1.12.1
-	golang.org/x/sync v0.22.0
+	golang.org/x/sync v0.23.0
 )
 
 require (
